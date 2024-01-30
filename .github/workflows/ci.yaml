@@ -12,6 +12,9 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      packages: write
     uses: ohmyplatform/actions/.github/workflows/build_and_push.yml@v1
 
   updateArgoCDApp:
